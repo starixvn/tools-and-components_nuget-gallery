@@ -34,6 +34,11 @@ namespace NuGetGallery
 
         public virtual async Task<ActionResult> Home()
         {
+            if(Request.Url.Host.ToLower().Contains("nuget.nexcel.vn"))
+            {
+                return Redirect("http://nuget.nexdev.net");
+            }
+
             if (ContentService != null)
             {
                 ViewBag.Content = await ContentService.GetContentItemAsync(
