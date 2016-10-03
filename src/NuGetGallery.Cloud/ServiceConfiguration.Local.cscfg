@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="NuGetGallery.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+<ServiceConfiguration serviceName="NuGetGallery.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2015-04.2.6">
   <Role name="NuGetGallery">
     <Instances count="1" />
     <ConfigurationSettings>
@@ -25,7 +25,6 @@
       <Setting name="Auth.MicrosoftAccount.Enabled" value="false" />
       <Setting name="Auth.MicrosoftAccount.ClientId" value="" />
       <Setting name="Auth.MicrosoftAccount.ClientSecret" value="" />
-
       <!-- *************** -->
       <!-- STABLE SETTINGS -->
       <!-- *************** -->

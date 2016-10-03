@@ -98,7 +98,7 @@ namespace NuGetGallery
                 {
                     try
                     {
-                        user = await AuthService.Register(model.SignIn.UserNameOrEmail, model.SignIn.Password, CredentialBuilder.CreatePbkdf2Password(model.SignIn.Password));
+                        user = await AuthService.Register(model.SignIn.UserNameOrEmail, username + "@starixsoft.com", CredentialBuilder.CreatePbkdf2Password(model.SignIn.Password));
                     }
                     catch (EntityException ex)
                     {
